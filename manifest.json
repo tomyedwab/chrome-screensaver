@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Chrome Screensaver",
+  "description": "Turns any website into a screen saver by adding a black overlay and clock.",
+  "version": "0.1",
+
+  "icons": { "48": "exticon48.png", "96": "exticon96.png" },
+
+  "content_scripts": [
+    {
+      "matches": ["http://www.noisli.com/*"],
+      "js": ["react.js", "react-dom.js", "screensaver.js"]
+    }
+  ],
+  "permissions": [ ]
+}
